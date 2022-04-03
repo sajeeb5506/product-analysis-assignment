@@ -22,10 +22,8 @@ const Home = () => {
             <div className="">
                 <h1 className='review-heading'>Customer revew</h1>
            
-                
-              <div className="">
-              <Link to={'reviews'} className='shop-btn'> More Reviews</Link>
-              </div>
+              <h1 className='btn'><Link to={'reviews'} className='shop-btn'> More Reviews</Link></h1>
+              
             </div>
         </div>
     );
