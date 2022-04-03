@@ -1,0 +1,39 @@
+.home-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.left{
+    padding: 20px;
+}
+.shop-btn{
+padding: 10px 25px;
+border-radius: 10px;
+background-color: black;
+color: rgb(55, 113, 223);
+font-weight: 700;
+border: none;
+}
+.shop-btn:hover{
+    color: white;
+background-color:   rgb(55, 113, 223);
+}
+
+.heading{
+font-size: 40px;
+font-weight: 500;
+}
+.discription{
+font-size: 25px;
+}
+.img{
+    height: 400px;
+    width: 600px;
+}
+.review-heading{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+}

@@ -10,5 +10,8 @@ a{
     font-weight: 600;
 }
 a:hover{
-    color: rgb(83, 153, 153);
+    color: rgb(55, 113, 223);
+}
+.active{
+    color: rgb(55, 113, 223);
 }

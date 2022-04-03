@@ -1,17 +1,22 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
+import { NavLink } from 'react-router-dom';
 
 import './Header.css'
 const Heder = () => {
     return (
         <div>
         <nav>
-           <Link to='/'>Home</Link>
-           <Link to="reviews">Reviews</Link>
-           <Link to="dashboard">Dashboard</Link>
-           <Link to="blogs">Blogs</Link>
-           <Link to="about">About</Link>
+           <NavLink className={({ isActive }) =>
+              isActive ? 'active' : 'a'} to='/'>Home</NavLink>
+           <NavLink className={({ isActive }) =>
+              isActive ? 'active' : 'a'} to="reviews">Reviews</NavLink>
+           <NavLink className={({ isActive }) =>
+              isActive ? 'active' : 'a'} to="dashboard">Dashboard</NavLink>
+           <NavLink className={({ isActive }) =>
+              isActive ? 'active' : 'a'} to="blogs">Blogs</NavLink>
+           <NavLink className={({ isActive }) =>
+              isActive ? 'active' : 'a'} to="about">About</NavLink>
         </nav>
         </div>
     );
