@@ -8,7 +8,7 @@ const ShortReview = ({review}) => {
                 <img className='img-short' src={picture} alt="" />
                 <h1 >{name}</h1>
                 <p className='discription'> {discription}</p>
-                <p className='discription'>{reating}</p>
+                <p className='discription'> Reating: {reating}</p>
             </div>
         </div>
     );

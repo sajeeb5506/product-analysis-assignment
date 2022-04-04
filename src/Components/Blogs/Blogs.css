@@ -1,0 +1,23 @@
+.blog-container{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 20px;
+    padding: 50px;
+
+}
+.question{
+    color: rgb(111, 186, 236);
+}
+.ans{
+    font-size: 20px;
+    
+}
+@media (max-width: 600px) {
+    .blog-container{
+        display: grid;
+        grid-template-columns:  1fr;
+        gap: 20px;
+        padding: 5px;
+    
+    }
+    }
