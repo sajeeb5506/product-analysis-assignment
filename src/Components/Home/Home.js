@@ -9,6 +9,8 @@ import ShortReview from '../ShortReview/ShortReview';
 
 const Home = () => {
    const [productReviews, setProductReview]= userReview();
+   let shortREview=productReviews.slice(0, 3);
+
     return (
         <div>
             <div className="home-container">
@@ -24,10 +26,10 @@ const Home = () => {
                 </div>
             </div>
             <div className="">
-                <h1 className='review-heading'>Customer revew</h1>
+                <h1 className='review-heading'>Customer revew (3)...</h1>
                 <div className="shortReview-container">
                 {
-                    productReviews.map(review=><ShortReview  key={review.id}
+                    shortREview.map(review=><ShortReview  key={review.id}
                         review={review} >
                         
                     </ShortReview>
