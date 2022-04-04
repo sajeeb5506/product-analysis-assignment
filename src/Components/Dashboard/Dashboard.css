@@ -5,6 +5,10 @@
   padding: 30px;
    
 }
+.dashheading{
+ color: rgb(79, 174, 236);
+ margin-bottom: 10px;
+}
 @media only screen and (max-width: 600px) {
     .dasbord{
         display: grid;

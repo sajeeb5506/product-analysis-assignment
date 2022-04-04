@@ -15,7 +15,8 @@ console.log(data);
     return (
         <div className='dasbord'>
      <div className="">
-     <BarChart width={600} height={250} data={data}>
+     <h1 className='dashheading'>Investment vs Revenue</h1>
+     <BarChart width={500} height={250} data={data}>
         <CartesianGrid strokeDasharray="4 4" />
          <XAxis dataKey="month" />
          <YAxis />
@@ -27,7 +28,8 @@ console.log(data);
         </BarChart>
      </div>
      <div className="">
-     <LineChart width={600} height={250} data={data}
+     <h1 className='dashheading'>Investment vs Revenue</h1>
+     <LineChart width={500} height={250} data={data}
   margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
   <CartesianGrid strokeDasharray="3 3" />
   <XAxis dataKey="month" />
@@ -40,6 +42,7 @@ console.log(data);
 </LineChart>
      </div>
      <div className="">
+     <h1 className='dashheading'>Investment vs Revenue</h1>
      <RadarChart outerRadius={90} width={600} height={250} data={data}>
   <PolarGrid />
   <PolarAngleAxis dataKey="month" />
@@ -51,7 +54,8 @@ console.log(data);
 </RadarChart>
      </div>
      <div className="">
-     <PieChart width={600} height={250}>
+     <h1 className='dashheading'>Investment vs Revenue</h1>
+     <PieChart width={500} height={250}>
   <Pie data={data} dataKey="month" nameKey="investment" cx="50%" cy="50%" outerRadius={50} fill="#8884d8" />
   <Pie data={data} dataKey="sell" nameKey="revenue" cx="50%" cy="50%" innerRadius={60} outerRadius={80} fill="#82ca9d" label />
 </PieChart>
