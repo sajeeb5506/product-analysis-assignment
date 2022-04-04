@@ -1,0 +1,17 @@
+.cart{
+border: 1px solid gray;
+padding: 15px;
+height: 500px;
+border-radius: 10px;
+}
+.img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 2px solid gray;
+    margin-left:130px;
+}
+.discription{
+    font-size: 20px;
+    font-weight: 600;
+}

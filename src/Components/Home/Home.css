@@ -28,7 +28,7 @@ font-weight: 500;
 .discription{
 font-size: 25px;
 }
-.img{
+.img-banner{
     height: 400px;
     width: 600px;
 }
@@ -39,9 +39,28 @@ font-size: 25px;
 }
 .btn{
     text-align: center;
+    margin-bottom: 50px;
+}
+.shortReview-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   gap: 50px;
+   padding:50px 100px;
+ 
 }
 @media (max-width: 600px) {
     .home-container {
       flex-direction: column;
+    }
+    .shortReview-container{
+        display: grid;
+        grid-template-columns: 1fr;
+     
+       padding: 5px;
+     
+    }
+    .img-banner{
+        height: 300px;
+        width: 500px;
     }
   }

@@ -2,9 +2,13 @@ import React from 'react';
 import './Home.css'
 import img from "../img/clp-h10b-module1-1920-2x.webp"
 import { Link } from 'react-router-dom';
+import userReview from '../../Hook/userReview';
+
+import ShortReview from '../ShortReview/ShortReview';
+
 
 const Home = () => {
-  
+   const [productReviews, setProductReview]= userReview();
     return (
         <div>
             <div className="home-container">
@@ -15,16 +19,27 @@ const Home = () => {
                 </div>
                 <div className="">
               
-                   <img className='img' src={img} alt="" />
+                   <img className='img-banner' src={img} alt="" />
 
                 </div>
             </div>
             <div className="">
                 <h1 className='review-heading'>Customer revew</h1>
-           
-              <h1 className='btn'><Link to={'reviews'} className='shop-btn'> More Reviews</Link></h1>
+                <div className="shortReview-container">
+                {
+                    productReviews.map(review=><ShortReview  key={review.id}
+                        review={review} >
+                        
+                    </ShortReview>
+                     
+                    )
+                }
+            </div>
+               
+                <h1 className='btn'><Link to={'reviews'} className='shop-btn'> More Reviews</Link></h1>
               
             </div>
+         
         </div>
     );
 };
